@@ -32,3 +32,5 @@ function multiplication(x) {
 function reset () {
     total = 0;
 }
+
+alert("ceci marche")
