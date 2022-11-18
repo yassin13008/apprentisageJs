@@ -14,6 +14,12 @@ color: rgb(175, 233, 233);
 .box {
    border: 6px solid whitesmoke;
    transition: 0.25s ease;
-   background: bisque;
+   background: rgb(0, 0, 0);
    padding: 10px;
+}
+
+p {
+    visibility: hidden;
+    width: 240px;
+    margin: 10px auto 0;
 }
