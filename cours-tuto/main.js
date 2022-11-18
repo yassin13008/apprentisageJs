@@ -37,6 +37,8 @@
 
 // alert("ceci marche")
 
+// ------------------ creer un element
+
 // avec .createElement('h1'), j'ai crée dans ma variable un h1
 
 // para.classList.add("bleu")
@@ -73,12 +75,13 @@
 // On sait que le h4 contient la question " qu'elle est la capital de la suisse"
 //  Une fois que le doc query select est fait pas besoin de le refaire 
 
-//  CLICKS EVENTS
+//  ---------------------------------CLICKS EVENTS
 
-const questionContainer = document.querySelector('.click-event');
+// const questionContainer = document.querySelector('.click-event');
+
 //  Ici j'ai crée une variable qui va contenir la div ayant pour class 
 // click-event, FAIRE TOUJOUR CONSOLE.LOG après chaque création de variable
-console.log(questionContainer)
+// console.log(questionContainer)
 
 // questionContainer.style.borderRadius="150px";
 
@@ -117,11 +120,11 @@ console.log(questionContainer)
 // Si on observe le html (DOM)
 // On constate qu'un style="background: grey" s'est rajouté à la balise div
 
-questionContainer.addEventListener("click", function click(){
-    // questionContainer.classList.add('question-click')
-    // questionContainer.classList.remove('box')
-        questionContainer.classList.toggle('question-click')
-}) 
+// questionContainer.addEventListener("click", function click(){
+//     // questionContainer.classList.add('question-click')
+//     // questionContainer.classList.remove('box')
+//         questionContainer.classList.toggle('question-click')
+// }) 
 
 // LIGNE 121
 
@@ -142,6 +145,35 @@ questionContainer.addEventListener("click", function click(){
 // Ici on a rajouté toggle
 // Le toggle veut dire que si un element (la class pour le coup) n'est pas présent
 // Tu le rajoute et si à l'inverse la class est présent, tu l'enlèves
+
+const questionContainer = document.querySelector('.click-event');
+
+questionContainer.addEventListener("click", ()=> {
+    questionContainer.classList.toggle("question-clicked");
+})
+
+const btn1 = document.querySelector('#btn-1');
+const btn2 = document.getElementById('btn-2');
+//  get Element permet de grappe l'élément direct par l'id
+// pas besoin de mettre le # ducoup
+
+const reponse = document.querySelector('p')
+
+btn1.addEventListener('click', ()=> {
+    reponse.classList.add('show-reponse')
+    reponse.style.background="green"
+
+})
+
+btn2.addEventListener('click', ()=> {
+    reponse.classList.add('show-reponse')
+    reponse.style.background="red"
+})
+
+//  NE PAS OUBLIER LES ORDRES DE PRIORITE ID CLASS
+
+
+
 
 
 
