@@ -82,3 +82,25 @@ questionContainer.addEventListener("mouseenter", () => {
 response.addEventListener("mouseover", () => {
     response.style.transform = "rotate(2deg)";
   });
+
+  const keypressContainer = document.querySelector ('.keypress');
+const key = document.getElementById('key');
+
+
+
+document.addEventListener('keypress', (e)=> {
+    key.textContent = e.key
+
+    if (e.key==="y") {
+        key.style.background="cyan"
+    }
+    else if (e.key === "a") {
+        key.style.backgroundColor="blue"
+        
+    }
+    else {
+        key.style.backgroundColor="pink"
+    }
+
+
+})
