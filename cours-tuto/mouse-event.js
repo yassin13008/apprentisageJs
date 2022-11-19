@@ -94,6 +94,5 @@
 // response.addEventListener("mouseover", () => {
 //     response.style.transform = "rotate(2deg)";
 //   });
-
 // Ici on donne un petit effet a response
 // lors que la souris passera sur p ( qui contier la réponse) le petit carré s'incline 
