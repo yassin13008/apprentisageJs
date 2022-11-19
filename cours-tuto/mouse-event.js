@@ -1,5 +1,6 @@
+// ( Je reprends les mêmes nom que lui)
 //  J'ai crée une div avec  class mouse-move
-const mousemove = document.querySelector(".mousemove")
+// const mousemove = document.querySelector(".mousemove")
 //  J'ai incrémenter la div en question dans une variable
 
 // window.addEventListener('mousemove', ()=> {
@@ -35,9 +36,9 @@ const mousemove = document.querySelector(".mousemove")
 
 //  Ici on a concaténer la valeur px a pageX et des lors l'event fonctionne 
 
-window.addEventListener('mousemove', (e)=> {
-    mousemove.style.left= e.pageX + "px" 
-    mousemove.style.top= e.pageY + "px" })
+// window.addEventListener('mousemove', (e)=> {
+//     mousemove.style.left= e.pageX + "px" 
+//     mousemove.style.top= e.pageY + "px" })
 
     // Des lors on peut faire la même chose en ce qui concerne l'axe des ordonnée
     // Toutefois il reste le probleme de centrage
@@ -45,3 +46,54 @@ window.addEventListener('mousemove', (e)=> {
     // la souris en haut et a gauche du cercle
     // Pour ce problème on passe en CSS transform (voir modif css)
     // J'ai mis un z-index pour que l'élément passe en dessous de l'autre div
+
+    // mousemove.addEventListener("mousedown",()=> {
+    //     console.log("test")
+    // })
+
+    // Ici l'event ne marche pas car le z-index -1 fais passer l'event derrier le body
+
+    // window.addEventListener("mousedown",()=> {
+    //     console.log("test")
+    // })
+
+    // Ne pas confondre avec un click-event = quand on clique sur un élément
+    // mousedown c'est quand on click sur le bouton de la souris
+    // Ici celà marche
+
+    // window.addEventListener("mousedown",()=> {
+    //     mousemove.style.transform="scale(2) translate(-25%,-25%)"
+    // })
+
+    // Le centrage du cercle aura un probleme ici, translate sera écrasé
+    // On ne peut pas mettre deux fois la meme prio css sinon elle se supprime
+    // des lors on rajoute une deuxieme fois translate  translate(-50%,-50%)
+    // Comme y a un scale de 2 des lors il faut mettre 25% (l'élément grandis)
+
+    // window.addEventListener("mousedown",()=> {
+    //     mousemove.style.transform="scale(2) translate(-25%,-25%)"
+    // })
+
+    // window.addEventListener("mouseup",()=> {
+    //     mousemove.style.transform="scale(1) translate(-50%,-50%)"
+    //     mousemove.style.border = "2px solid red"
+    // })
+
+    // // Mouse up correspont à quand on relache la touche de la souris
+
+// questionContainer.addEventListener("mouseenter", () => {
+//     questionContainer.style.background = "rgba(0,0,0,0.6)";
+//   });
+//  Ici l'effet demandée est qu'a chaque fois que l'on survole avec la souris 
+//  La div question, une opacité va se mettre en place
+// le mouseenter se fait au survole
+
+// questionContainer.addEventListener("mousout", ()=> {})
+// C'est lorsque la souris sort de la zone de survolage
+
+// response.addEventListener("mouseover", () => {
+//     response.style.transform = "rotate(2deg)";
+//   });
+
+// Ici on donne un petit effet a response
+// lors que la souris passera sur p ( qui contier la réponse) le petit carré s'incline 

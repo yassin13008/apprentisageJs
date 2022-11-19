@@ -1,4 +1,4 @@
-// CECI EST LES PREMICES DE MON APPRENTISSAGE JS
+// ( Je reprends les mêmes nom que lui)
 
 // let total = 0;
 
