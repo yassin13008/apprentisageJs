@@ -71,7 +71,7 @@
 
 // const h4 = document.querySelector('h4')
 
-//  Ici j'ai crée une variable et j'ai incrémenter du coup l'élément h1
+//  Ici j'ai crée une variable et j'ai incrémenter du coup l'élément h4
 // On sait que le h4 contient la question " qu'elle est la capital de la suisse"
 //  Une fois que le doc query select est fait pas besoin de le refaire 
 
