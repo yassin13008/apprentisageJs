@@ -22,6 +22,7 @@
 
 // console.log(e.key) 
 // le (e.key) permet d'afficher dans la console la touche sur laquelle j'appuie ()
+// N'oublies pas le e permet d'afficher toutes les données ds la console, pour aller chercher la donnée qu'on a besoin, faire (.)+ce qu'on veut (pageX,target,etc...)
 
 //key.textContent ="Je viens d'écrire "
 // Ici le texte je viens d'écrire se rajoutera si j'appuie du coup sur une touche de mon claver

@@ -13,19 +13,19 @@
 // window.addEventListener('mousemove', (e)=> {
 //     console.log(e) })
     // le (e) permet de récupérer toute les données d'un évenement
-    // Lors que je passe la souris, console.log va afficher la date de l'endroit 
+    // Lors que je passe la souris, console.log va afficher la data de l'endroit 
     // ou se trouve la souris 
     // on met le (e) en général dans les déclarations d'event
 
     // window.addEventListener('mousemove', (e)=> {
     //     console.log(e.target) })
 // Pour se déplacer dans la data du coup mettre un (.) après le e
-// Ici on se déplace dans la data target
+// Ici chaque déplacement affichera la data via .target
 
 // window.addEventListener('mousemove', (e)=> {
 // mousemove.style.left= e.pageX })
 
-// Ici des lors, on se deplace dans la data pageX
+// Ici des lors, on se deplace dans la data pageX, la div va suivre le mouvement de la souris
 // (Correspond à la place de la souris en absciss en pixel )
 // Toutefois la donnée px n'apparait pas seulement le nombre
 // On veux a chaque deplacement de la gauche, la div se déplace
