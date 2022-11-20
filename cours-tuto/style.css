@@ -53,6 +53,7 @@ nav {
   height: 50px;
   position: fixed;
   top: -50px;
+  transition: 0.4s;
 }
 
 ul {

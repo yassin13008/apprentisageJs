@@ -35,6 +35,9 @@
 //     total = 0;
 // }
 
+//                        CLICK EVENT
+
+
 const questionContainer = document.querySelector(".click-event");
 const btn1 = document.querySelector("#btn-1");
 const btn2 = document.getElementById("btn-2");
@@ -53,6 +56,10 @@ btn2.addEventListener("click", () => {
   response.classList.add("show-response");
   response.style.background = "red";
 });
+
+
+//                          MOUSE EVENT
+
 
 const mousemove = document.querySelector(".mousemove");
 
@@ -83,10 +90,12 @@ response.addEventListener("mouseover", () => {
     response.style.transform = "rotate(2deg)";
   });
 
+//                KEY PRESS
+
   const keypressContainer = document.querySelector ('.keypress');
 const key = document.getElementById('key');
 
-
+//                      
 
 document.addEventListener('keypress', (e)=> {
     key.textContent = e.key
@@ -104,3 +113,18 @@ document.addEventListener('keypress', (e)=> {
 
 
 })
+
+//                      SCROLL EVENT
+
+const nav = document.querySelector('nav')
+
+window.addEventListener('scroll',()=> {
+  if (scrollY >200) {
+  nav.style.top="0px"
+  }
+  else if (scrollY<200) {
+      nav.style.top="-50px"
+  }
+})
+
+//               FORM EVENT
