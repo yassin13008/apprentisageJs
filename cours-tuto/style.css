@@ -44,3 +44,21 @@
     transition: 0.1s ease;
     z-index: -1;
 }
+
+nav {
+  background-color: pink;
+  color: rgb(14, 143, 143);
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: -50px;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0;
+
+}
